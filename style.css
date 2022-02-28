@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-  font-size: 37px;
+  font-size: 36px;
+  margin: 10px;
 }
 
 h2 {
@@ -20,28 +21,27 @@ span {
   color: grey;
 }
 
+.container {
+  box-shadow: 0 0 20px grey;
+  width: 960px;
+  margin: 0 auto;
+  background-color: white;
+}
+section,
 header {
   padding: 10px 60px 20px 60px;
-  background-color: white;
-  width: 960px;
-  margin: 0 auto;
 }
 
-section {
-  padding: 10px 60px 20px 60px;
-  background-color: white;
-  width: 960px;
-  margin: 0 auto;
-}
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 60px;
 }
 header ul {
   list-style: none;
 }
-header li {
+li {
   margin-bottom: 15px;
 }
 .address-icon {
@@ -84,4 +84,28 @@ header li {
 
 p {
   line-height: 1.5;
+}
+
+.linkedin-cv {
+  border: 2px solid cornflowerblue;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 26px;
+  transition: backgroud-color 0.2s, color 0.5s;
+  box-shadow: 0 0 20px grey;
+}
+.linkedin-cv:hover {
+  color: white;
+  background-color: cornflowerblue;
+}
+.linkedin-cv:focus {
+  outline: none;
+  color: white;
+  background-color: cornflowerblue;
+}
+.linkedin-cv:active {
+  text-decoration: underline;
 }
